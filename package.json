@@ -1,0 +1,31 @@
+{
+  "name": "find-duplicate-files",
+  "version": "1.0.0",
+  "description": "This child module downloads all of the files in the course and hashes them to find which files have the same contents",
+  "main": "main.js",
+  "dependencies": {
+    "canvas-wrapper": "github:byuitechops/canvas-wrapper",
+    "md5": "^2.2.1",
+    "request": "^2.86.0"
+  },
+  "devDependencies": {
+    "async": "^2.6.0",
+    "child-development-kit": "github:byuitechops/child-development-kit",
+    "tap": "^10.7.3"
+  },
+  "scripts": {
+    "start": "node ./node_modules/child-development-kit/runChild.js",
+    "test": "tap ./node_modules/child-development-kit/runChild.js -T"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/find-duplicate-files.git"
+  },
+  "author": "Zachary Williams, Daniel Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byuitechops/find-duplicate-files/issues"
+  },
+  "homepage": "https://github.com/byuitechops/find-duplicate-files#readme",
+  "childType": "postImport"
+}
